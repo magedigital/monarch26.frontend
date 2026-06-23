@@ -1,0 +1,64 @@
+.indexHeader {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    padding: 170rem 0 136rem;
+    border-radius: 0 0 48rem 48rem;
+
+    @include bg("/media/bg-desktop.jpg", 100% auto, center top);
+
+    @include mob {
+        padding: 44rem 0 60rem;
+        border-radius: 0 0 32rem 32rem;
+
+        @include bg("/media/bg-mob.jpg", 100% auto, center top);
+    }
+
+    &__content {
+        width: 418rem;
+        margin-left: auto;
+
+        @include mob {
+            width: 82%;
+            margin: 0 auto;
+        }
+    }
+
+    &__slogan {
+        display: block;
+        width: 100%;
+        height: 306rem;
+        margin-bottom: 47rem;
+        object-fit: contain;
+
+        @include mob {
+            margin-bottom: 172rem;
+        }
+    }
+
+    &__button {
+        width: 364rem;
+        height: 68rem;
+        color: #1c4a27;
+        font-weight: 600;
+        font-size: 20rem;
+        letter-spacing: 2%;
+        text-transform: uppercase;
+        background: #fff;
+        border-radius: 360rem;
+        box-shadow: 0 6rem 16rem 0 #83af8c;
+        transition: $trans;
+
+        @include button(0.98);
+
+        &:hover {
+            color: #f1882c;
+        }
+
+        @include mob {
+            width: 100%;
+            height: 62rem;
+            font-size: 18rem;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.closeBtn {
+    width: 44rem;
+    height: 44rem;
+    padding: 10rem;
+    background: #fff;
+    border-radius: 12rem;
+
+    @include icon(#8200cc);
+    @include button(0.95);
+
+    @include mob {
+        width: 36rem;
+        height: 36rem;
+        padding: 9rem;
+    }
+}

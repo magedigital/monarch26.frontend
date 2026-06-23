@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Игра | Добрый Кола</title>
+    <meta name="description" content="Описание">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Onest:wght@100..900&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Onest:wght@100..900&display=swap"
+        rel="stylesheet">
+    <script src="/_game/interface.js"></script>
+    <script defer="defer" src="/_game/static/js/main.cb073b6e.js"></script>
+    <link href="/_game/static/css/main.f374def8.css" rel="stylesheet">
+</head>
+
+<body style="background:#000"><noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="container" style="position:absolute;left:23px;top:5px;right:23px;bottom:5px">
+        <div id="game" class="game" oninit="onAppReadyHandler"></div>
+    </div><button onclick="window.deactivateGameApp()"
+        style="position:absolute;top:0;transform:scale(.5);z-index:100">X</button> <button
+        onclick="window.activateGameApp()" style="position:absolute;top:15px;transform:scale(.5);z-index:100">></button>
+    <button onclick="window.restartGameApp()"
+        style="position:absolute;top:30px;transform:scale(.5);z-index:100">R</button>
+    <script>window.addEventListener("DOMContentLoaded", (() => { console.log("DataMatrix Scanner: DOMContentLoaded, вызываем activate()"), setTimeout((() => { window.activateGameApp && window.activateGameApp() }), 100) }))</script>
+    <svg>
+        <filter id="vertical-blur-10">
+            <feGaussianBlur stdDeviation="0 10"></feGaussianBlur>
+        </filter>
+        <filter id="vertical-blur-5">
+            <feGaussianBlur stdDeviation="0 5"></feGaussianBlur>
+        </filter>
+    </svg>
+</body>
+
+</html>
