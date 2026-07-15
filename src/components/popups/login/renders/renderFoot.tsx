@@ -13,7 +13,7 @@ const renderFoot: I['renderFoot'] = function () {
             <div className="popup__buttons _FULL_W _ROW _ROW_H_CENTER">
                 <div className="popup__button _fix">
                     <Button
-                        className="_darkPinkColor _boldBorder"
+                        className="_whiteBorderColor"
                         onClick={() => {
                             appStore.getState().setPopup({ name: 'regPopup' });
                         }}
@@ -23,7 +23,7 @@ const renderFoot: I['renderFoot'] = function () {
                 </div>
                 <div className="popup__button _fix">
                     <Button
-                        className="_purpleColor _boldBorder"
+                        className="_mainColor"
                         onClick={this.sendForm.bind(this)}
                         loading={loadingKey === 'send'}
                     >

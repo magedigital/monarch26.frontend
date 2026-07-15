@@ -2,7 +2,7 @@
     "name": "",
     "version": "0.0.1",
     "private": true,
-    "proxy": "https://dev.ssd26.srv08.ru",
+    "proxy": "https://dev.mixes-leto.ru",
     "dependencies": {
         "@types/crypto-js": "^4.2.2",
         "axios": "^0.21.1",

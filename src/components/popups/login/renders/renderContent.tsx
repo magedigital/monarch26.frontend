@@ -8,7 +8,6 @@ const renderContent: I['renderContent'] = function (this: I) {
             <div className="popup__content _FULL_W">
                 {this.renderHead()}
                 {this.renderFields()}
-                {this.renderSocials()}
                 {this.renderFoot()}
             </div>
         </div>

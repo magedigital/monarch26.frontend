@@ -9,8 +9,6 @@ import init from './methods/init.ts';
 
 import AddressI from './types.ts';
 
-import { AppRouter } from '../../index.tsx';
-
 class Address extends Default<AddressI['props'], AddressI['state']> implements AddressI {
     parent: AddressI['parent'];
 
@@ -30,7 +28,7 @@ class Address extends Default<AddressI['props'], AddressI['state']> implements A
 
     render() {
         const { currentBlock, list, search } = this.state;
-        const { pointAddress, onChange, pageData, setPoint, pointId } = this.props;
+        const { pointAddress, onChange, setPoint, pointId } = this.props;
 
         return (
             <div ref={this.parent} className="addressPoint _FULL_W">
@@ -58,21 +56,7 @@ class Address extends Default<AddressI['props'], AddressI['state']> implements A
                         )}
 
                         <div className="addressPoint__button">
-                            <Button
-                                className="_lightPurpleColor _mediumSize"
-                                onClick={() => {
-                                    AppRouter.changePage({
-                                        pageName: 'anketMap',
-                                        pageData: {
-                                            pointAddress,
-                                            pointId,
-                                            ...pageData,
-                                        },
-                                    });
-                                }}
-                            >
-                                Выбрать пункт
-                            </Button>
+                            <Button className="_lightPurpleColor _mediumSize">Выбрать пункт</Button>
                         </div>
                     </div>
                 </div>

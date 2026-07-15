@@ -13,11 +13,12 @@ const renderForm: I['renderForm'] = function () {
     return (
         <div className="popup__code _COL _COL_H_CENTER">
             <div className="popup__codeText _COL _COL_H_CENTER">
-                Мы отправили сообщение на&nbsp;твой адрес:
+                Мы отправили сообщение <br className="_MOBILE" />
+                на&nbsp;твой адрес:
                 <div className="popup__codeEmail">{login}</div>
                 <span>
                     Пожалуйста, <LinkTag {...linkProps}>проверь почтовый ящик</LinkTag>
-                    <br />и введи код {isConfirm ? ':' : 'для сброса пароля ниже:'}
+                    <br className='_DESKTOP' />и введи код {isConfirm ? ':' : 'для сброса пароля ниже:'}
                 </span>
             </div>
             <div className="popup__codeInputs">

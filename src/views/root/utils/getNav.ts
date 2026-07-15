@@ -43,19 +43,19 @@ export const getNav = (): NavItemT[] => {
         text: 'победители',
         name: 'winners',
         type: 'link',
-        pageName: 'index',
+        pageName: 'winners',
     });
     nav.push({
         text: 'вопрос-ответ',
         name: 'faq',
         type: 'link',
-        pageName: 'index',
+        pageName: 'faq',
     });
     nav.push({
         text: 'личный кабинет',
         name: 'profile',
         type: 'link',
-        pageName: 'index',
+        pageName: 'profile',
     });
 
     return nav;

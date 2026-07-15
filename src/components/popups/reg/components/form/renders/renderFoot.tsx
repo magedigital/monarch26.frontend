@@ -15,7 +15,7 @@ const renderFoot: I['renderFoot'] = function () {
                 {!isConfirm && (
                     <div className="popup__button _fix">
                         <Button
-                            className="_darkPinkColor _boldBorder"
+                            className="_whiteBorderColor"
                             onClick={() => {
                                 appStore.getState().setPopup({ name: 'loginPopup' });
                             }}
@@ -27,7 +27,7 @@ const renderFoot: I['renderFoot'] = function () {
 
                 <div className="popup__button _fix">
                     <Button
-                        className="_purpleColor _boldBorder"
+                        className="_mainColor"
                         onClick={this.sendForm.bind(this)}
                         loading={loadingKey === 'send'}
                     >

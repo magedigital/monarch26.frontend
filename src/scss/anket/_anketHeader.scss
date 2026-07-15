@@ -1,0 +1,43 @@
+.anketHeader {
+    width: 100%;
+
+    &__inner {
+        align-items: center;
+    }
+
+    &__head {
+        align-items: center;
+        margin-bottom: 32rem;
+
+        @include mob {
+            margin-bottom: 28rem;
+        }
+
+        &Title {
+            margin-bottom: 6rem;
+            text-align: center;
+        }
+
+        &Text {
+            text-align: center;
+        }
+    }
+
+    &__content {
+        align-items: center;
+        width: 100%;
+        padding: 64rem;
+        background: #003216;
+        border-radius: 36rem;
+
+        @include mob {
+            padding: 32rem 16rem;
+            border-radius: 32rem;
+        }
+
+        &Inner {
+            width: 100%;
+            max-width: 750rem;
+        }
+    }
+}

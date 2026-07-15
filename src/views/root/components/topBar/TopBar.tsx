@@ -3,6 +3,7 @@ import React from 'react';
 import Default from '@/src/components/default/Default.tsx';
 import Icon from '@/src/components/icon/Icon.tsx';
 import Media from '@/src/components/media/Media.tsx';
+import { AppRouter } from '@/src/index.tsx';
 
 import TopBarI from './types.ts';
 
@@ -54,6 +55,9 @@ class TopBar extends Default<TopBarI['props'], TopBarI['state']> implements TopB
                             className="topBar__profile"
                             src={require('@/src/media/user-icon.svg').default}
                             alt=""
+                            onClick={() => {
+                                AppRouter.changePage({ pageName: 'profile' });
+                            }}
                         />
                     </Media>
                 </div>

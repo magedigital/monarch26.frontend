@@ -1,5 +1,7 @@
 import { API } from '@/src/api/api';
 import request from '@/src/utils/request';
+import { FaqContentT } from '@/src/views/root/pages/faq/types';
+import { ProfileContentT } from '@/src/views/root/pages/profile/types';
 
 import { MainContentT } from '../../views/root/pages/index/types';
 
@@ -8,10 +10,14 @@ const version = 4;
 type ContentNamesT = keyof typeof urls;
 type ContentDatasT = {
     main: MainContentT;
+    faq: FaqContentT;
+    profile: ProfileContentT;
 };
 
 const urls = {
     main: 'MAIN',
+    faq: 'FAQ',
+    profile: 'PROFILE',
 } as const;
 
 export const setLocalContent = function (d: { name: ContentNamesT; data: any }): void {

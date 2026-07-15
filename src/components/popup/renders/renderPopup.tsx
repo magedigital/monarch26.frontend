@@ -1,12 +1,7 @@
 import React from 'react';
 
-import Fade from '@/src/components/fade/Fade.tsx';
 import List from '@/src/components/list/List.tsx';
 import LoaderBlock from '@/src/components/loaderBlock/LoaderBlock.tsx';
-import Media from '@/src/components/media/Media.tsx';
-
-import Menu from '../../../views/root/components/menu/Menu.tsx';
-import TopBar from '../../../views/root/components/topBar/TopBar.tsx';
 
 import I, { PopupRenderContentT } from '../types.ts';
 
@@ -14,27 +9,10 @@ const renderPopupContent = function (
     this: I,
     data: { render: PopupRenderContentT; id?: string; canClose?: boolean; withTopBar?: boolean },
 ) {
-    const { isMenuShow } = this.state;
     const isInit = this.props.isInit ?? this.state.isInit;
-    const { withTopBar = true } = data;
 
     return (
         <div className="popup__wrapperBox">
-            {!window.isBot && withTopBar && (
-                <>
-                    <div className="popup__topBar">
-                        <TopBar
-                            mode="popup"
-                            setMenuState={this.setMenuState.bind(this)}
-                            pageCloseHandler={this.close.bind(this)}
-                        />
-                    </div>
-                    <Fade isShow={!!isMenuShow} className="popup__menu">
-                        <Menu setState={this.setMenuState.bind(this)} />
-                    </Fade>
-                </>
-            )}
-
             {typeof isInit === 'boolean' && (
                 <LoaderBlock
                     isShow={isInit !== true}
@@ -43,9 +21,8 @@ const renderPopupContent = function (
                 />
             )}
             <div className="popup__inner _COL">
-                <Media check={(d) => d === 'desktop' || withTopBar === false}>
-                    {(data.canClose ?? true) && this.renderClose()}
-                </Media>
+                {(data.canClose ?? true) && this.renderClose()}
+
                 {data.render({ id: data.id })}
             </div>
         </div>

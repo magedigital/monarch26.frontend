@@ -3,6 +3,7 @@ import React from 'react';
 import Default from '@/src/components/default/Default.tsx';
 import Icon from '@/src/components/icon/Icon.tsx';
 import Media from '@/src/components/media/Media.tsx';
+import { AppRouter } from '@/src/index.tsx';
 
 import RulesI from './types.ts';
 
@@ -58,7 +59,15 @@ class Rules extends Default<RulesI['props'], RulesI['state']> implements RulesI 
                                 <div className="indexRules__cardHead">
                                     <h3 className="indexRules__cardTitle">регистрируйте чеки</h3>
                                     <p className="indexRules__cardText">
-                                        в <span className="_CLICK">Личном кабинете</span>
+                                        в{' '}
+                                        <span
+                                            className="_CLICK"
+                                            onClick={() => {
+                                                AppRouter.changePage({ pageName: 'profile' });
+                                            }}
+                                        >
+                                            Личном кабинете
+                                        </span>
                                     </p>
                                 </div>
                                 <img

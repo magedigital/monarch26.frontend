@@ -1,0 +1,151 @@
+.profileMain {
+    width: 100%;
+    margin-top: 22rem;
+    padding: 33rem 32rem;
+    background: #fcfcfc;
+    border-radius: 20rem;
+
+    @include mob {
+        padding: 18rem 18rem 28rem;
+    }
+
+    &__top {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 42rem;
+
+        @include mob {
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 24rem;
+        }
+    }
+
+    &__name {
+        color: #003216;
+        font-weight: 600;
+        font-size: 32rem;
+        font-family: Sofia;
+        text-transform: uppercase;
+
+        @include mob {
+            font-size: 36rem;
+        }
+    }
+
+    &__id {
+        margin-left: auto;
+        padding: 7rem 24rem;
+        color: #003216;
+        font-weight: 600;
+        font-size: 14rem;
+        line-height: 1.3;
+        text-align: center;
+        text-transform: uppercase;
+        border: 2rem solid #003216;
+        border-radius: 360rem;
+
+        @include mob {
+            margin: 14rem 0 0;
+            padding: 6rem 13rem;
+            font-size: 18rem;
+        }
+    }
+
+    &__actions {
+        display: flex;
+        align-items: center;
+        width: 100%;
+
+        @include mob {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__action {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        & + & {
+            margin-left: 20rem;
+        }
+
+        &._exit {
+            width: 120rem;
+            margin-left: auto !important;
+
+            @include mob {
+                width: 100%;
+                margin-top: 26rem;
+            }
+        }
+
+        &._history {
+            @include mob {
+                margin-left: auto;
+            }
+        }
+
+        &Inner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 10rem 15rem;
+            color: #fff;
+            font-weight: 600;
+            font-size: 14rem;
+            border-bottom: 1rem solid rgba(#fff, 0.72);
+            transition: $trans;
+
+            @include mob {
+                padding: 13rem 15rem;
+                font-size: 16rem;
+            }
+
+            &:hover {
+                color: #ffe0a7;
+                border-color: rgba(#ffe0a7, 0.72);
+            }
+        }
+
+        &._change &Inner {
+            color: #003216;
+            text-transform: uppercase;
+            background: #ffde82;
+            border-radius: 8rem;
+
+            @include mob {
+                border-radius: 12rem;
+            }
+        }
+
+        &._history &Inner {
+            padding: 0;
+            color: #f1882c;
+            font-weight: 500;
+            font-size: 16rem;
+            line-height: 1;
+            border-bottom: 1px solid #f1882c;
+
+            @include mob {
+                font-size: 18rem;
+            }
+        }
+
+        &._exit &Inner {
+            color: #fff;
+            text-transform: uppercase;
+            background: #f1882c;
+            border-radius: 8rem;
+
+            @include mob {
+                padding: 20rem;
+                font-size: 18rem;
+                border-radius: 12rem;
+            }
+        }
+    }
+}

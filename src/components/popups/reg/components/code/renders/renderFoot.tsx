@@ -13,7 +13,7 @@ const renderFoot: I['renderFoot'] = function () {
             <div className="popup__buttons _FULL_W _ROW _ROW_H_CENTER">
                 <div className="popup__button">
                     <Button
-                        className="_purpleColor _boldBorder"
+                        className="_mainColor"
                         onClick={this.sendAgainReg.bind(this)}
                         loading={loadingKey === 'again'}
                     >

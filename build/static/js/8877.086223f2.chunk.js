@@ -1,1 +1,0 @@
-"use strict";(globalThis.webpackChunk=globalThis.webpackChunk||[]).push([[8877],{8877:(e,s,n)=>{n.r(s),n.d(s,{default:()=>i});n(9950);var r=n(4414);const i=function(){return(0,r.jsx)("div",{className:"popup__innerBox",children:(0,r.jsxs)("div",{className:"popup__content _FULL_W",children:[this.renderHead(),this.renderFields(),this.renderSocials(),this.renderFoot()]})})}}}]);

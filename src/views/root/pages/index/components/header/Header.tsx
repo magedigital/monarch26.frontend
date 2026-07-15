@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Default from '@/src/components/default/Default.tsx';
+import { appStore } from '@/src/store/store.tsx';
 
 import HeaderI from './types.ts';
 
@@ -24,7 +25,14 @@ class Header extends Default<HeaderI['props'], HeaderI['state']> implements Head
                             alt=""
                             className="indexHeader__slogan"
                         />
-                        <div className="indexHeader__button _ROW _ROW_CENTER _CLICK">ЗАГРУЗИТЬ ЧЕК</div>
+                        <div
+                            className="indexHeader__button _ROW _ROW_CENTER _CLICK"
+                            onClick={() => {
+                                appStore.getState().setPopup({ name: 'chequePopup' });
+                            }}
+                        >
+                            ЗАГРУЗИТЬ ЧЕК
+                        </div>
                     </div>
                 </div>
             </div>

@@ -12,8 +12,8 @@ const renderHead: I['renderHead'] = function () {
             </div>
             {!isConfirm && (
                 <p className="popup__description">
-                    Если Вы ещё не регистрировались или&nbsp;забыли пароль для&nbsp;входа в Личный
-                    кабинет
+                    Если Вы ещё не&nbsp;регистрировались <br className="_DESKTOP" />
+                    или забыли пароль для&nbsp;входа в&nbsp;Личный кабинет
                 </p>
             )}
         </div>

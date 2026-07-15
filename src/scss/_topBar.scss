@@ -75,6 +75,10 @@
         pointer-events: none;
     }
 
+    &._inner &__nav {
+        background: linear-gradient(to right, #025829, #43a54c 50%, #025829);
+    }
+
     &__nav {
         height: 56rem;
         margin: 0 auto;

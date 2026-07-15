@@ -2,12 +2,8 @@
     position: relative;
 
     &._formField {
-        background: #f9ecfd;
-        border-radius: 8rem;
-
-        @include mob {
-            border-radius: 10rem;
-        }
+        background: #fff;
+        border-radius: 12rem;
     }
 
     &__field {
@@ -50,14 +46,13 @@
 
     &._subMode &__field,
     &._subMode &__support {
-        padding: 10rem 10rem 10rem 52rem;
-        color: #222221;
-        font-weight: 600;
+        padding: 10rem 52rem 10rem 20rem;
+        color: #003216;
+        font-weight: 500;
         font-size: 18rem;
-        font-family: Onest;
 
         @include mob {
-            padding: 10rem 16rem 10rem 52rem;
+            padding: 10rem 52rem 10rem 16rem;
             font-size: 18rem;
         }
     }
@@ -65,10 +60,9 @@
     &._formField &__field,
     &._formField &__support {
         padding: 14rem 16rem;
-        color: #222221;
-        font-weight: 600;
+        color: #003216;
+        font-weight: 500;
         font-size: 18rem;
-        font-family: Onest;
 
         @include mob {
             font-size: 18rem;
@@ -76,6 +70,6 @@
     }
 
     &._formField &__support {
-        color: rgba(#5c0f8b, 0.6);
+        color: rgba(#003216, 0.6);
     }
 }

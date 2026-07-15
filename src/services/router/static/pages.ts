@@ -34,46 +34,17 @@ const pages = {
             }
         },
     },
-    'profile-codes': {
-        links: ['', undefined, 'codes'],
-        level: 1,
-        parentName: 'profile',
-    },
-    'profile-cheques': {
-        links: ['cheques'],
-        level: 1,
-        parentName: 'profile',
-    },
-    'profile-prizes': {
-        links: ['prizes'],
-        level: 1,
-        parentName: 'profile',
+    winners: {
+        links: ['winners'],
     },
     faq: {
         links: ['faq'],
-        isPublic: true,
-    },
-    faq5ka: {
-        links: ['faq-5ka'],
-        isPublic: true,
     },
     anket: {
         links: ['anket'],
     },
     fullAnket: {
         links: ['full-anket'],
-    },
-    anketMap: {
-        links: ['anket-map'],
-    },
-    winners: {
-        links: ['winners'],
-    },
-    products: {
-        links: ['products'],
-    },
-    rules: {
-        links: ['rules'],
     },
     login: {
         links: ['login'],
