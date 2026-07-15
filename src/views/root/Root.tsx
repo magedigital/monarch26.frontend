@@ -50,7 +50,7 @@ class Root extends Default<RootI['props'], RootI['state']> implements RootI {
 
         return (
             <>
-                <CustomHead title={this.getMetaTitle()} />
+                {false && <CustomHead title={this.getMetaTitle()} />}
                 {Styles && <Styles />}
                 <Errors />
                 <div className={this.getClass('body__content', window.isBot && '_BOT')}>
