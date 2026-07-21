@@ -45,9 +45,9 @@ class ProfileMain
                             Изменить данные
                         </div>
                     </div>
-                    <div className="profileMain__action _history">
+                    {/* <div className="profileMain__action _history">
                         <div className="profileMain__actionInner _CLICK">История</div>
-                    </div>
+                    </div> */}
                     <div className="profileMain__action _exit">
                         <div
                             className="profileMain__actionInner _CLICK"
