@@ -15,7 +15,6 @@ const sendForm: I['sendForm'] = async function (d) {
         mailing: d.mailing ? '1' : undefined,
         password1: d.password,
         password2: d.password2,
-        referral: d.referral,
     };
 
     await anketRequests.send({ data });

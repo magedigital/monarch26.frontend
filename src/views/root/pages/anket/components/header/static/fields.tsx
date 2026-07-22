@@ -1,10 +1,6 @@
 import React from 'react';
 
 export const anketFields = {
-    referral: {
-        type: 'input',
-        support: 'ID пригласившего участника',
-    },
     firstName: {
         type: 'input',
         support: 'Имя*',

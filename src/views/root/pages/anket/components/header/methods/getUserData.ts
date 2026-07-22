@@ -10,7 +10,6 @@ const getUserData: I['getUserData'] = function () {
         lastName: authUser.personal.lastName,
         phone: new Phone().format(authUser.personal.phone),
         mailing: authUser.mailing ? '1' : undefined,
-        referral: localStorage.getItem('inv') || undefined,
     };
 };
 
