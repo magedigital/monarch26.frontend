@@ -2,7 +2,7 @@ import React from 'react';
 
 import Default from '@/src/components/default/Default.tsx';
 import { AppRouter } from '@/src/index.tsx';
-import { StoreT, WithStore } from '@/src/store/store.tsx';
+import { StoreT, WithStore, appStore } from '@/src/store/store.tsx';
 
 import ProfileMainI from './types.ts';
 
@@ -45,9 +45,16 @@ class ProfileMain
                             Изменить данные
                         </div>
                     </div>
-                    {/* <div className="profileMain__action _history">
-                        <div className="profileMain__actionInner _CLICK">История</div>
-                    </div> */}
+                    <div className="profileMain__action _cheque">
+                        <div
+                            className="profileMain__actionInner _CLICK"
+                            onClick={() => {
+                                appStore.getState().setPopup({ name: 'chequePopup' });
+                            }}
+                        >
+                            Загрузить чек
+                        </div>
+                    </div>
                     <div className="profileMain__action _exit">
                         <div
                             className="profileMain__actionInner _CLICK"

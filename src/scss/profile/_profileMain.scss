@@ -67,6 +67,11 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        height: 38rem;
+
+        @include mob {
+            height: 46rem;
+        }
 
         & + & {
             margin-left: 20rem;
@@ -78,12 +83,20 @@
 
             @include mob {
                 width: 100%;
+                height: auto;
                 margin-top: 26rem;
             }
         }
 
-        &._history {
+        &._change {
             @include mob {
+                width: calc(50% - 6rem);
+            }
+        }
+
+        &._cheque {
+            @include mob {
+                width: calc(50% - 6rem);
                 margin-left: auto;
             }
         }
@@ -93,6 +106,7 @@
             align-items: center;
             justify-content: center;
             width: 100%;
+            height: 100%;
             padding: 10rem 15rem;
             color: #fff;
             font-weight: 600;
@@ -118,20 +132,25 @@
             border-radius: 8rem;
 
             @include mob {
+                padding-right: 0;
+                padding-left: 0;
+                font-size: 13rem;
                 border-radius: 12rem;
             }
         }
 
-        &._history &Inner {
-            padding: 0;
-            color: #f1882c;
-            font-weight: 500;
-            font-size: 16rem;
-            line-height: 1;
-            border-bottom: 1px solid #f1882c;
+        &._cheque &Inner {
+            color: #003216;
+            font-weight: 600;
+            text-transform: uppercase;
+            border: 2rem solid #003216;
+            border-radius: 8rem;
 
             @include mob {
-                font-size: 18rem;
+                padding-right: 0;
+                padding-left: 0;
+                font-size: 13rem;
+                border-radius: 12rem;
             }
         }
 
