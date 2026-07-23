@@ -22,6 +22,7 @@ export const logoutHandler = async function (): Promise<void> {
         return;
     }
 
+    AppRouter.changePage({ pageName: 'index' });
     appStore.getState().setPopup({ name: 'loginPopup' });
 
     setTimeout(async () => {
